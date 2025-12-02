@@ -4,7 +4,9 @@ let tarefas = [];
 document.addEventListener('DOMContentLoaded', () => {
     carregarTarefasSalvas();
     carregarAgenda();
+    // Usa o evento 'submit' no form 'taskForm'
     document.getElementById('taskForm').addEventListener('submit', adicionarTarefa);
+    // Usa o evento 'click' nos botões com ID
     document.getElementById('analisarBtn').addEventListener('click', enviarTarefas);
     document.getElementById('limparBtn').addEventListener('click', limparLista);
     renderizarTarefas();
@@ -32,6 +34,7 @@ function removerTarefa(index) {
 }
 
 function renderizarTarefas() {
+    // CORRIGIDO: Usa 'tarefasLista' para corresponder ao HTML
     const listaDiv = document.getElementById('tarefasLista');
     listaDiv.innerHTML = '';
     
