@@ -53,7 +53,7 @@ function renderizarTarefas() {
                 <small>Prioridade: ${tarefa.prioridade}</small>
                 <small>Descrição: ${tarefa.descricao}</small>
             </div>
-            <button class="btn" style="background: var(--color-danger) !important;" onclick="removerTarefa(${index})">Remover</button>
+            <button class="btn" style="background-color: red ;" onclick="removerTarefa(${index})">Remover</button>
         `;
         
         const li = document.createElement('li');
