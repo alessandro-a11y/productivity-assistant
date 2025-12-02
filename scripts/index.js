@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://productivity-assistant-backend.onrender.com/"; 
+const API_BASE_URL = "https://productivity-assistant-backend.onrender.com"; 
 let tarefas = [];
 
 document.addEventListener('DOMContentLoaded', () => {
